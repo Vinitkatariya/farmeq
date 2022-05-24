@@ -1,13 +1,13 @@
-import 'package:flutter_auth/screens/home/Farmland/Sell/searchsell.dart';
+import 'package:flutter_auth/screens/home/Equipments/Renteq/searchrenteq.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/config/palette.dart';
 
-class Sell extends StatefulWidget {
+class Renteq extends StatefulWidget {
   @override
-  _SellState createState() => _SellState();
+  _RenteqState createState() => _RenteqState();
 }
 
-class _SellState extends State<Sell> {
+class _RenteqState extends State<Renteq> {
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
@@ -16,7 +16,7 @@ class _SellState extends State<Sell> {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) {
-            return SearchSell();
+            return SearchRenteq();
           }),
         );
       },
@@ -29,7 +29,7 @@ class _SellState extends State<Sell> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             image: DecorationImage(
-              image: AssetImage('assets/images/sell.jpg'),
+              image: AssetImage('assets/images/eq1.jpg'),
               fit: BoxFit.cover,
               repeat: ImageRepeat.noRepeat,
             ),
@@ -64,7 +64,7 @@ class _SellState extends State<Sell> {
                   SizedBox(height: 40),
                   Flexible(
                     child: Text(
-                      "BUY",
+                      "RENT",
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       //softWrap: true,

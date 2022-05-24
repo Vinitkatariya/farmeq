@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/config/palette.dart';
 import 'package:flutter_auth/config/styles.dart';
+import 'package:flutter_auth/screens/home/Equipments/Renteq/Renteq.dart';
+import 'package:flutter_auth/screens/home/Equipments/Selleq/Selleq.dart';
 //import 'package:farmland/data/data.dart';
 import 'package:flutter_auth/widgets/widgets.dart';
 import 'package:flutter_auth/screens/home/Farmland//Sell/Sell.dart';
 import 'package:flutter_auth/screens/home/Farmland/Rent/Rent.dart';
 import 'package:flutter_auth/screens/home/Farmland/Batai/Batai.dart';
+import 'package:flutter_auth/chat/chat.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -66,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(builder: (context) {
-                                    return Scaffold();
+                                    return Chat();
                                   }),
                                 );
                               },
@@ -210,18 +213,15 @@ class _HomeScreenState extends State<HomeScreen> {
                               SizedBox(
                                 width:10,
                               ),
-                              Sell(),
+                              Selleq(),
                               SizedBox(
                                 height: 10,width:10,
                               ),
-                              Rent(),
+                              Renteq(),
                               SizedBox(
                                 height: 10,width:10,
                               ),
-                              Batai(),
-                              SizedBox(
-                                height: 40,width:10,
-                              ),
+
                             ]
                         ) ,
                       )
